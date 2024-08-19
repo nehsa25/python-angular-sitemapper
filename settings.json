@@ -1,0 +1,64 @@
+{
+    "base_url": "https://www.nehsa.net/#",
+    "priority_overrides": [
+        {
+            "folder": "welcome.html",
+            "priority": 0.8
+        },
+        {
+            "folder": "index.html",
+            "priority": 0.9
+        }
+    ],
+    "ignore_folders": [
+        "shared-components",
+        "flashcards",
+        "user-popup",
+        "invalid-name",
+        "help-modal",
+        "dupe-name",
+        "glider"
+    ],
+    "mappings": [
+        {
+            "folder": "ai-image-generation",
+            "url_path": "aiimage"
+        },
+        {
+            "folder": "designpatterns",
+            "url_path": "design"
+        },
+        {
+            "folder": "engr102",
+            "url_path": "school/engr102"
+        },
+        {
+            "folder": "ph207",
+            "url_path": "school/ph207"
+        },
+        {
+            "folder": "doxygen",
+            "url_path": "doxy"
+        },
+        {
+            "folder": "this-website",
+            "url_path": "website"
+        },
+        {
+            "folder": "kubernetes",
+            "url_path": "k8s"
+        },
+        {
+            "folder": "web-design",
+            "url_path": "webdesign"
+        },
+        {
+            "folder": "bio",
+            "url_path": "about"
+        },
+        {
+            "folder": "app",
+            "url_path": ""
+        }
+    ]
+}
