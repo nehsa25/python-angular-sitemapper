@@ -7,11 +7,11 @@ c:\python .\update.py
 # Settings:
 ```json
 {
-    "base_url": "https://www.nehsa.net/#",
+    "base_url": "The protocol/domain portion of the url",
     "priority_overrides": [
         {
             "folder": "A specific page",
-            "priority": 0.8
+            "priority": "The priority as a float (0.0 - 1.0)"
         }
     ],
     "ignore_folders": [
