@@ -33,17 +33,16 @@ class Sitemap:
                         file_name = self.get_filename_without_extension(full_path)
                         item: SitemapItem = SitemapItem()                        
                         for mapping in self.settings.mappings:
-                            if mapping["folder"] == item.loc:
+                            if mapping["folder"] == file_name:
                                 item.loc = mapping["url_path"]
                                 break
                             else:
                                 item.loc = file_name
                         item.lastmod = os.path.getmtime(full_path)
-                        item.changefreq = SitemapItem.Frequency.MONTHLY
+                        item.changefreq = SitemapItem.Frequency.DAILY
                         for override in self.settings.priority_overrides:
                             #print(override["page"], item.loc)
                             if item.loc in override["folder"]:
-                                print("found!")
                                 item.priority = override["priority"]
                                 break
                             else:
