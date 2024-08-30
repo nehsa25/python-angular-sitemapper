@@ -1,5 +1,5 @@
 {
-    "base_url": "https://www.nehsa.net/#",
+    "base_url": "https://www.nehsa.net",
     "priority_overrides": [
         {
             "folder": "welcome.html",
@@ -23,6 +23,7 @@
         "dupe-name",
         "glider"
     ],
+    "use_hash": false,
     "mappings": [
         {
             "folder": "ai-image-generation",

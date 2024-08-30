@@ -68,6 +68,8 @@ class Sitemap:
             file.write("<?xml version='1.0' encoding='UTF-8'?>\n")
             file.write("<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>\n")
             self.scan_directory(SCAN_PATH, sitemap)
+            if self.settings.use_hash:
+                self.settings.base_url += "/#"
             for html_document in self.html_documents:
                 if any(item in html_document.full_path for item in self.settings.ignore_folders):
                     # print("Skipping ignored folder: ", html_document.full_path)
