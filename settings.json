@@ -6,6 +6,10 @@
             "priority": 0.8
         },
         {
+            "folder": "mud.html",
+            "priority": 1.0
+        },
+        {
             "folder": "index.html",
             "priority": 0.9
         }
@@ -55,6 +59,22 @@
         {
             "folder": "bio",
             "url_path": "about"
+        },
+        {
+            "folder": "javascript-frameworks",
+            "url_path": "webdev-frameworks"
+        },
+        {
+            "folder": "game-theory",
+            "url_path": "2024-august-29/gametheory"
+        },
+        {
+            "folder": "what-comes-around-goes-around",
+            "url_path": "2024-august-29/agism"
+        },
+        {
+            "folder": "mud-making-of",
+            "url_path": "2024-july-28/makingofmud"
         },
         {
             "folder": "app",
