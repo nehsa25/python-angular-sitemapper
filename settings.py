@@ -19,4 +19,5 @@ class Settings:
     mappings: list[Mapping] = field(default_factory=list)
     priority_overrides: list[PriorityOverride] = field(default_factory=list)
     ignore_folders: list[str] = field(default_factory=list)
+    search_path: str = ""
     

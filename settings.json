@@ -1,5 +1,6 @@
 {
     "base_url": "https://www.nehsa.net",
+    "search_path": "C:\\src\\nehsanet-app\\nehsanet\\src\\app",
     "priority_overrides": [
         {
             "folder": "welcome.html",

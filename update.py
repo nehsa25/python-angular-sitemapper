@@ -57,7 +57,6 @@ class Sitemap:
         return Settings(**data)
 
     def generate(self):
-        SCAN_PATH = "C:\\src\\nehsanet-app\\nehsanet\\src\\app"
         SITEMAP_FILENAME = "sitemap.xml"
         self.settings = self.load_settings("settings.json")
 
@@ -67,7 +66,7 @@ class Sitemap:
         with open(SITEMAP_FILENAME, "w") as file:
             file.write("<?xml version='1.0' encoding='UTF-8'?>\n")
             file.write("<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>\n")
-            self.scan_directory(SCAN_PATH, sitemap)
+            self.scan_directory(self.settings.search_path, sitemap)
             if self.settings.use_hash:
                 self.settings.base_url += "/#"
             for html_document in self.html_documents:
