@@ -1,6 +1,6 @@
 {
     "base_url": "https://www.nehsa.net",
-    "search_path": "C:\\src\\nehsanet-app\\nehsanet\\src\\app",
+    "search_path": "C:\\src\\website\\nehsanet-web-app\\nehsanet\\src\\app",
     "priority_overrides": [
         {
             "folder": "welcome.html",
@@ -77,6 +77,14 @@
         {
             "folder": "mud-making-of",
             "url_path": "2024-july-28/makingofmud"
+        },
+        {
+            "folder": "microsoft-monetize-now",
+            "url_path": "monetizenow"
+        },
+        {
+            "folder": "microsoft-clarity",
+            "url_path": "clarity"
         },
         {
             "folder": "app",
