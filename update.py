@@ -74,11 +74,16 @@ class Sitemap:
                     # print("Skipping ignored folder: ", html_document.full_path)
                     continue
 
+                url = f"{self.settings.base_url}/{html_document.loc}"
+
+                if not url.endswith('/'):
+                    url += '/'
+
                 modified_date = datetime.datetime.fromtimestamp(
                     html_document.lastmod
                 ).strftime("%Y-%m-%d")
                 file.write(
-                    f"<url><loc>{self.settings.base_url}/{html_document.loc}/</loc><lastmod>{modified_date}</lastmod><changefreq>{html_document.changefreq.value}</changefreq><priority>{html_document.priority}</priority></url>\n"
+                    f"<url><loc>{url}</loc><lastmod>{modified_date}</lastmod><changefreq>{html_document.changefreq.value}</changefreq><priority>{html_document.priority}</priority></url>\n"
                 )
             file.write("</urlset>")
 
