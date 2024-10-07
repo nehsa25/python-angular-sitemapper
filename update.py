@@ -75,7 +75,6 @@ class Sitemap:
                     continue
 
                 url = f"{self.settings.base_url}/{html_document.loc}"
-
                 if not url.endswith('/'):
                     url += '/'
 
